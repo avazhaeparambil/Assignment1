@@ -1,0 +1,281 @@
+.city-container {
+    display: flex;
+    align-items: left;
+    max-width: 55px;
+    max-height: 12px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#city-id {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+  
+.dropdown-icon {
+    padding: 6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.upper-right-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 35px;
+}
+  
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+}
+
+.toggle-label input[type="checkbox"] {
+    display: none;
+    width: 0px; /* Adjust the width */
+    height: 0px; /* Adjust the height */
+  }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: -1px;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 5px;
+    left: 0px;
+    bottom: 0.5px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  .toggle-label input[type="checkbox"]:checked + .slider {
+    background-color: #007bff;
+  }
+
+  .toggle-label input[type="checkbox"]:checked + .slider:before {
+    transform: translateX(5px);
+  }
+  
+  .toggle-text {
+    font-family: Helvetica, sans-serif;
+    margin-left: 122px;
+    margin-top: -6px;
+    font-size: 5px;
+  }
+
+.settings-icon {
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    font-family: Helvetica, sans-serif;
+    font-size: 6px;
+    font-weight: lighter;
+    margin-top: 4px;
+    margin-left: 7px;
+}
+
+.temp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Background color */
+}
+
+.circle {
+    width: 40px; /* Adjust the circle's diameter */
+    height: 40px;
+    border-radius: 50%; /* Create a circle shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Circle background color */
+    margin-top: -20px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.circle img {
+    opacity: 0.6;
+    width: 40px; /* Adjust image size as needed */
+    height: 40px;
+    border-radius: 50%; /* Clip image to match circle shape */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+}
+  
+  /* CSS for the text inside the overlay */
+.text-overlay p {
+    margin-top: 15px;
+    margin-left: 2px; /* Remove default margin */
+    font-size: 20px; /* Adjust text size */
+    font-weight: bold; /* Add or remove as needed */
+    color: #000; /* Text color */
+    font-family: Helvetica, sans-serif;
+}
+
+.text-overlay img {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    margin-top: 25px;
+    margin-left: -2px;
+}
+
+.dashed-line {
+    width: 200px; /* Adjust the width as needed */
+    height: 2px; /* Adjust the height as needed */
+    background-color: transparent; /* Set background color to transparent */
+    border-bottom: 0.5px dashed black; /* Dashed line style and color */
+    margin-top: 30px;
+    position: relative;
+}
+
+.trendline {
+    display: flex;
+}
+
+.trendline img {
+    width: 100px; /* Adjust the width as needed */
+    margin-left: 47px;
+    margin-top: -15px;
+}
+
+.weather-icon {
+    display: flex;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.weather-icon img {
+    padding: 2px;
+}
+
+.weather-icon p {
+    font-family: Helvetica, sans-serif;
+    font-size: 5px;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: -2px;
+    padding: 3px;
+}
+
+.widget {
+    display: block;
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue color */
+    color: white; /* Text color */
+    align-items: left;
+    max-width: 125px;
+    max-height: 100px;
+    margin: 0 auto;
+    border-color: #007bff;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px; /* Padding inside the box */
+    padding-bottom: 2px;
+}
+
+.widget h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 7px; /* Adjust the font size as needed */
+    text-transform: uppercase; /* Change text case as needed */
+    color: black;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.widget h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 8px; /* Adjust the font size as needed */
+    text-transform: uppercase; /* Change text case as needed */
+    color: black;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.widget h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 6px; /* Adjust the font size as needed */
+    color: black;
+    font-weight: lighter;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+.widget p {
+    font-family: Helvetica, sans-serif;
+    font-size: 5px; /* Adjust the font size as needed */
+    text-transform: uppercase; /* Change text case as needed */
+    color: black;
+    font-weight: lighter;
+    margin-top: 0px;
+}
+
+.fit-images {
+    margin-top: -7px;
+    margin-left: -9px;
+    padding: 4px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.arrow-container{
+    display: flex;
+    padding-top: 0px;
+    max-height: 15px;
+    margin: 0px;
+}
+
+.left-arrow {
+    padding-bottom: 0px;
+}
+
+.right-arrow {
+    padding-bottom: 0px;
+    margin-left: 110px;
+}
